@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --main-color: #8032ce;
+    --bg-color: #fff;
+    --text-color: #0f0c27;
+    --hover: hsl(260, 100%, 51%);
+    --big-font: 3.2rem;
+    --medium-font: 1.8rem;
+    --p-font: 0.941rem;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+body.active {
+    --text-color: #fff;
+    --bg-color: #0f0c27;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+*::selection {
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 30px;
+}
+
+.heading span {
+    font-size: var(--p-font);
+    color: rgb(2, 166, 70);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 13px 10%;
+    transition: 0.2s;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+header.shadow {
+    box-shadow: 0 0 4px rgba(14, 55, 54, 0.15);
+}
+
+.logo {
+    font-size: 1.61rem;
+    font-weight: 600;
+    color: var(--main-color);
+    /* margin-left: -70px; */
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: var(--hover);
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+#darkmode {
+    font-size: 23px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: -40px;
+}
+
+/* Home section */
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+.home-img{
+    order:3
+}
+.home-img img{
+    width: 70%;
+    height: auto;
+    margin-left: 80px;
+}
+.home-text span{
+    font-size: var(--medium-font);
+    font-weight: 500;
+}
+.home-text h1{
+    font-size: var(--big-font);
+}
+.home-text h2{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.home-text p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    margin: 0.7rem 0 1rem;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social a{
+    margin-bottom: 0.8rem;
+    font-size: 26px;
+    color: var(--text-color);
+}
+.social a:hover{
+    color: var(--hover);
+}
+.btn{
+    display: inline-block;
+    background: var(--main-color);
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    background: var(--hover);
+}
+
+/* About Section */
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.about-img img{
+    width: 80%;
+    border-radius: 0.5rem;
+    margin-top: -6.5rem;
+}
+.about-text{
+    font-size: var(--p-font);
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 4rem;
+}
+.about-text a{
+    margin-top: 3rem;
+}
+
+
+
+/* Skills */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Adjust the column widths as needed */
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center; 
+  }
+  
+  .skills-content {
+    display: grid;
+    gap: 1rem;
+    margin-top: 7px;
+  }
+  
+  .skill {
+    /* background-color: #f4f4f4; */
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-bar {
+    background-color: #fff;
+    height: 1rem;
+    border: 2px solid var(--main-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    background-color: var(--main-color);
+    height: 100%;
+  }
+  
+  .skills-img {
+    justify-self: end; 
+    max-width: 70%; 
+    margin-right: 0; 
+  }
+  
+  .skills-img img {
+    max-width: 100%;
+    height: auto;
+  }

@@ -68,49 +68,54 @@
     </section>
     
     <!-- Skill -->
+
     <section class="skills" id="skills">
-        <div class="heading">
+      <div class="heading">
           <h2>Skills</h2>
           <span>My Skills</span>
-        </div>
-        <div class="skills-container">
-          <div class="skills-content">
-            <div class="skill">
-              <div class="skill-name">HTML</div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 90%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">CSS</div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 80%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">Javascript</div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 70%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">ReactJS</div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 60%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">Git&GitHub</div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 60%;"></div>
-              </div>
-            </div>
+      </div>
+    <div class="skills-container">
+      <div class="bars">
+          <!-- Box 1 -->
+          <div class="bars-box">
+              <h3>HTML</h3>
+              <span>94%</span>
+              <div class="light-bar"></div>
+              <div class="percent-bar html-bar"></div>
           </div>
-          <div class="skills-img">
-            <img src="/public/Skills-img.jpg" alt="Skills Image">
+          <!-- Box 2 -->
+          <div class="bars-box">
+              <h3>CSS</h3>
+              <span>84%</span>
+              <div class="light-bar"></div>
+              <div class="percent-bar css-bar"></div>
           </div>
-        </div>
-      </section>
+          <!-- Box 3 -->
+          <div class="bars-box">
+              <h3>JavaScript</h3>
+              <span>74%</span>
+              <div class="light-bar"></div>
+              <div class="percent-bar js-bar"></div>
+          </div>
+          <!-- Box 4 -->
+          <div class="bars-box">
+              <h3>ReactJS</h3>
+              <span>60%</span>
+              <div class="light-bar"></div>
+              <div class="percent-bar react-bar"></div>
+          </div>
+          <div class="bars-box">
+              <h3>Git & GitHub</h3>
+              <span>70%</span>
+              <div class="light-bar"></div>
+              <div class="percent-bar git-bar"></div>
+          </div>
+      </div>
+      <div class="skills-img">
+          <img src="./public/Skills-img.jpg" alt="">
+      </div>
+  </div>
+
 
       <!-- Projects -->
       <section class="projects" id="projects">
@@ -121,8 +126,37 @@
 
         <!-- Contacts -->
         <section class="contact" id="contact">
-            <div class="heading">
-              <h2>Contacts</h2>
-            </div>
+          <div class="heading">
+              <h2>Contact</h2>
+              <span>Connect With Us</span>
+          </div>
+          <div class="contact-form">
+              <form action="">
+                  <input type="text" placeholder="Your Name">
+                  <input type="email" name="" id="" placeholder="Your Email">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                  <input type="button" value="Send" class="contact-button">
+              </form>
+          </div>
+      </section>
+<!-- Footer -->
+
+      <div class="footer">
+        <div class="footer-social">
+            <a href=""><i class='fa-brands fa-linkedin'></i></a>
+            <a href=""><i class='fa-brands fa-instagram' ></i></a>
+            <a href=""><i class='fa-brands fa-github' ></i></a>
+            <a href=""><i class='fa-solid fa-inbox' ></i></a>
+        </div>
+ 
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Created By <a href="">Prashant Bohra</a> | All Right Reserved.</p>
+    </div>
+ 
+
+
+<script src="script.js"></script>
 </body>
 </html>
